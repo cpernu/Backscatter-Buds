@@ -1,0 +1,25 @@
+<!-- Put this file in ~/.grc_gnuradio to use the correlate_threshold block
+in GNURadio-Companion. The flow graph must be in the same folder as
+dynamic_threshold.py for the execution to succeed. -->
+<block>
+  <name>Dynamic threshold</name>
+  <key>dynamic_threshold</key>
+  <category>[Custom correlation]</category>
+  <import>from dynamic_threshold import dynamic_threshold</import>
+  <make>dynamic_threshold()</make>
+  <sink>
+    <name>signal</name>
+    <type>float</type>
+    <vlen>1</vlen>
+  </sink>
+  <sink>
+    <name>threshold</name>
+    <type>float</type>
+    <vlen>1</vlen>
+  </sink>
+  <source>
+    <name>thresholded</name>
+    <type>float</type>
+    <vlen>1</vlen>
+  </source>
+</block>

@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name A_Comparator)(type Legacy)(uri "${KIPRJMOD}/Local Components/A comparator/A Comparator.lib")(options "")(descr ""))
+  (lib (name ADG919)(type Legacy)(uri "${KIPRJMOD}/Local Components/ADG919/ADG919.lib")(options "")(descr ""))
+  (lib (name BF1101WR)(type Legacy)(uri "${KIPRJMOD}/Local Components/BF1101WR/BF1101WR.lib")(options "")(descr ""))
+  (lib (name ADG841)(type Legacy)(uri "${KIPRJMOD}/Local Components/ADG841/ADG841.lib")(options "")(descr ""))
+  (lib (name SP-48)(type Legacy)(uri "${KIPRJMOD}/Local Components/SP-48/SP-48.lib")(options "")(descr ""))
+)

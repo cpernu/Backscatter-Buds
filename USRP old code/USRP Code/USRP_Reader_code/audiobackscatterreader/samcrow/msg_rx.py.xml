@@ -1,0 +1,15 @@
+<!-- Put this file in ~/.grc_gnuradio to use the correlate_threshold block
+in GNURadio-Companion. The flow graph must be in the same folder as
+msg_rx.py for the execution to succeed. -->
+<block>
+  <name>Message receive</name>
+  <key>msg_rx</key>
+  <category>[Custom correlation]</category>
+  <import>from msg_rx import msg_rx</import>
+  <make>msg_rx(sample_rate, bit_rate, lambda header, payload: None)</make>
+  <sink>
+    <name>thresholded</name>
+    <type>byte</type>
+    <vlen>1</vlen>
+  </sink>
+</block>

@@ -1,0 +1,20 @@
+<!-- Put this file in ~/.grc_gnuradio to use the correlate_threshold block
+in GNURadio-Companion. The flow graph must be in the same folder as
+correlate_threshold.py for the execution to succeed. -->
+<block>
+  <name>Correlation calculator</name>
+  <key>correlation_calculator</key>
+  <category>[Custom correlation]</category>
+  <import>from correlate import correlation_calculator</import>
+  <make>correlation_calculator(sample_rate, bit_rate)</make>
+  <sink>
+    <name>signal</name>
+    <type>complex</type>
+    <vlen>1</vlen>
+  </sink>
+  <source>
+    <name>correlation</name>
+    <type>complex</type>
+    <vlen>1</vlen>
+  </source>
+</block>

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Local Components")(type KiCad)(uri "${KIPRJMOD}/Local Components")(options "")(descr ""))
+)

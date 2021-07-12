@@ -1,0 +1,8 @@
+First: Audio downlink
+
+Audio from Skype to wireless downlink
+
+Next: Uplink
+Reader transmits constant
+Figure out gain control and filtering
+Then integrate with Skype
