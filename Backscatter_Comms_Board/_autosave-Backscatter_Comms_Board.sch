@@ -358,7 +358,7 @@ Wire Wire Line
 	2750 5000 2750 5250
 Connection ~ 2750 5000
 Wire Wire Line
-	1850 4500 1500 4500
+	1850 4500 1650 4500
 Wire Wire Line
 	1850 4700 1500 4700
 Wire Wire Line
@@ -575,7 +575,7 @@ L pspice:MNMOS M2
 U 1 1 60EC15C1
 P 4250 5700
 F 0 "M2" H 4537 5746 50  0000 L CNN
-F 1 "DNP" H 4537 5655 50  0000 L CNN
+F 1 "MNMOS" H 4537 5655 50  0000 L CNN
 F 2 "Local Components:BF1101WR" H 4225 5700 50  0001 C CNN
 F 3 "~" H 4225 5700 50  0001 C CNN
 	1    4250 5700
@@ -634,7 +634,7 @@ L Connector_Generic:Conn_01x03 J1
 U 1 1 60F6AB08
 P 4600 6800
 F 0 "J1" V 4472 6980 50  0000 L CNN
-F 1 "SPK_IN" V 4563 6980 50  0000 L CNN
+F 1 "Conn_01x03" V 4563 6980 50  0000 L CNN
 F 2 "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical" H 4600 6800 50  0001 C CNN
 F 3 "~" H 4600 6800 50  0001 C CNN
 	1    4600 6800
@@ -665,12 +665,12 @@ Wire Wire Line
 Wire Wire Line
 	6100 6750 5850 6750
 Wire Wire Line
-	6100 6950 5850 6950
+	6100 6850 5850 6850
 Text GLabel 5850 6550 0    50   Input ~ 0
 Stage4
 Text GLabel 5850 6750 0    50   Input ~ 0
 RF_RX
-Text GLabel 5850 7050 0    50   Input ~ 0
+Text GLabel 5850 6950 0    50   Input ~ 0
 SPK_EN
 Text GLabel 7500 4000 2    50   Input ~ 0
 Stage4
@@ -700,9 +700,9 @@ Wire Wire Line
 Connection ~ 6750 2500
 Wire Wire Line
 	6750 2500 7000 2500
-Text GLabel 5850 7150 0    50   Input ~ 0
+Text GLabel 5850 7050 0    50   Input ~ 0
 AN_EN
-Text GLabel 5850 7250 0    50   Input ~ 0
+Text GLabel 5850 7150 0    50   Input ~ 0
 Ant
 $Comp
 L ADG841:ADG841YKSZ-REEL7 U2
@@ -766,11 +766,11 @@ F 3 "~" H 6300 6850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 7050 5850 7050
+	6100 6950 5850 6950
 Wire Wire Line
-	5850 7150 6100 7150
+	5850 7050 6100 7050
 Wire Wire Line
-	6100 7250 5850 7250
+	6100 7150 5850 7150
 Wire Wire Line
 	9150 5050 9700 5050
 Wire Wire Line
@@ -825,7 +825,7 @@ F 3 "" H 6750 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6750 6000
-Text GLabel 5850 6950 0    50   Input ~ 0
+Text GLabel 5850 6850 0    50   Input ~ 0
 UPLINK_SR
 $Comp
 L power:GND #PWR013
@@ -1071,44 +1071,29 @@ F 3 "~" H 6000 5800 50  0001 C CNN
 	1    6000 5800
 	0    -1   1    0   
 $EndComp
-Wire Wire Line
-	1700 4200 1700 4100
-$Comp
-L power:GND #PWR?
-U 1 1 60ED2153
-P 1700 4100
-F 0 "#PWR?" H 1700 3850 50  0001 C CNN
-F 1 "GND" H 1705 3927 50  0000 C CNN
-F 2 "" H 1700 4100 50  0001 C CNN
-F 3 "" H 1700 4100 50  0001 C CNN
-	1    1700 4100
-	-1   0    0    1   
-$EndComp
 $Comp
 L Device:C C?
-U 1 1 60ED2159
-P 1700 4350
-F 0 "C?" H 1815 4396 50  0000 L CNN
-F 1 "0.01uF" H 1815 4305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1738 4200 50  0001 C CNN
-F 3 "~" H 1700 4350 50  0001 C CNN
-	1    1700 4350
+U 1 1 60EC845C
+P 1650 4350
+F 0 "C?" H 1765 4396 50  0000 L CNN
+F 1 "0.01uF" H 1765 4305 50  0000 L CNN
+F 2 "" H 1688 4200 50  0001 C CNN
+F 3 "~" H 1650 4350 50  0001 C CNN
+	1    1650 4350
+	1    0    0    -1  
+$EndComp
+Connection ~ 1650 4500
+Wire Wire Line
+	1650 4500 1500 4500
+$Comp
+L power:GND #PWR?
+U 1 1 60EC902D
+P 1650 4200
+F 0 "#PWR?" H 1650 3950 50  0001 C CNN
+F 1 "GND" H 1655 4027 50  0000 C CNN
+F 2 "" H 1650 4200 50  0001 C CNN
+F 3 "" H 1650 4200 50  0001 C CNN
+	1    1650 4200
 	-1   0    0    1   
 $EndComp
-Text GLabel 5850 6850 0    50   Input ~ 0
-RF_TX
-Wire Wire Line
-	6100 6850 5850 6850
-Text GLabel 9550 1300 0    50   Input ~ 0
-RX_EN
-Text Notes 4100 7000 0    50   ~ 0
-CHANGE FROM HEADER TO MIC
-Text Notes 3700 4200 0    50   ~ 0
-*Filter values may change\n
-Text Notes 3300 4950 0    50   ~ 0
-*Filter values may change\n
-Text Notes 3750 2250 0    50   ~ 0
-*Filter values may change\n
-Text Notes 5450 7400 0    50   ~ 0
-Change ant to SMA for ease of use\n
 $EndSCHEMATC
