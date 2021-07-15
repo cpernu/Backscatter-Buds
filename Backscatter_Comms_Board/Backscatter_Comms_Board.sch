@@ -358,7 +358,7 @@ Wire Wire Line
 	2750 5000 2750 5250
 Connection ~ 2750 5000
 Wire Wire Line
-	1850 4500 1500 4500
+	1850 4500 1700 4500
 Wire Wire Line
 	1850 4700 1500 4700
 Wire Wire Line
@@ -635,7 +635,7 @@ U 1 1 60F6AB08
 P 4600 6800
 F 0 "J1" V 4472 6980 50  0000 L CNN
 F 1 "SPK_IN" V 4563 6980 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical" H 4600 6800 50  0001 C CNN
+F 2 "Local Components:Multi-purpose_mic" H 4600 6800 50  0001 C CNN
 F 3 "~" H 4600 6800 50  0001 C CNN
 	1    4600 6800
 	0    1    1    0   
@@ -702,7 +702,7 @@ Wire Wire Line
 	6750 2500 7000 2500
 Text GLabel 5850 7150 0    50   Input ~ 0
 AN_EN
-Text GLabel 5850 7250 0    50   Input ~ 0
+Text GLabel 5800 7550 0    50   Input ~ 0
 Ant
 $Comp
 L ADG841:ADG841YKSZ-REEL7 U2
@@ -754,23 +754,12 @@ F 5 "IPC-7251" H 10000 5350 50  0001 L BNN "STANDARD"
 	1    10000 5350
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x07 J2
-U 1 1 60FD2669
-P 6300 6850
-F 0 "J2" H 6380 6892 50  0000 L CNN
-F 1 "Conn_01x07" H 6380 6801 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x07_P1.00mm_Vertical" H 6300 6850 50  0001 C CNN
-F 3 "~" H 6300 6850 50  0001 C CNN
-	1    6300 6850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6100 7050 5850 7050
 Wire Wire Line
 	5850 7150 6100 7150
 Wire Wire Line
-	6100 7250 5850 7250
+	6050 7550 5800 7550
 Wire Wire Line
 	9150 5050 9700 5050
 Wire Wire Line
@@ -1072,27 +1061,27 @@ F 3 "~" H 6000 5800 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	1700 4200 1700 4100
+	1700 4100 1700 4000
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 60ED2153
-P 1700 4100
-F 0 "#PWR?" H 1700 3850 50  0001 C CNN
-F 1 "GND" H 1705 3927 50  0000 C CNN
-F 2 "" H 1700 4100 50  0001 C CNN
-F 3 "" H 1700 4100 50  0001 C CNN
-	1    1700 4100
+P 1700 4000
+F 0 "#PWR0101" H 1700 3750 50  0001 C CNN
+F 1 "GND" H 1705 3827 50  0000 C CNN
+F 2 "" H 1700 4000 50  0001 C CNN
+F 3 "" H 1700 4000 50  0001 C CNN
+	1    1700 4000
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C22
 U 1 1 60ED2159
-P 1700 4350
-F 0 "C?" H 1815 4396 50  0000 L CNN
-F 1 "0.01uF" H 1815 4305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1738 4200 50  0001 C CNN
-F 3 "~" H 1700 4350 50  0001 C CNN
-	1    1700 4350
+P 1700 4250
+F 0 "C22" H 1815 4296 50  0000 L CNN
+F 1 "0.01uF" H 1815 4205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1738 4100 50  0001 C CNN
+F 3 "~" H 1700 4250 50  0001 C CNN
+	1    1700 4250
 	-1   0    0    1   
 $EndComp
 Text GLabel 5850 6850 0    50   Input ~ 0
@@ -1109,6 +1098,52 @@ Text Notes 3300 4950 0    50   ~ 0
 *Filter values may change\n
 Text Notes 3750 2250 0    50   ~ 0
 *Filter values may change\n
-Text Notes 5450 7400 0    50   ~ 0
-Change ant to SMA for ease of use\n
+$Comp
+L Device:Antenna_Chip AE1
+U 1 1 60EE6BC8
+P 6150 7450
+F 0 "AE1" V 6122 7754 50  0000 L CNN
+F 1 "Antenna_Chip" V 6213 7754 50  0000 L CNN
+F 2 "Connector_Coaxial:U.FL_Molex_MCRF_73412-0110_Vertical" H 6050 7625 50  0001 C CNN
+F 3 "~" H 6050 7625 50  0001 C CNN
+	1    6150 7450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 60EEE4F1
+P 5800 7350
+F 0 "#PWR0102" H 5800 7100 50  0001 C CNN
+F 1 "GND" H 5805 7177 50  0000 C CNN
+F 2 "" H 5800 7350 50  0001 C CNN
+F 3 "" H 5800 7350 50  0001 C CNN
+	1    5800 7350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 7350 5800 7350
+Wire Wire Line
+	1700 4400 1700 4500
+Connection ~ 1700 4500
+Wire Wire Line
+	1700 4500 1500 4500
+Text GLabel 5850 6450 0    50   Input ~ 0
+RX_EN
+Text GLabel 5850 6350 0    50   Input ~ 0
+Vstore
+Wire Wire Line
+	5850 6450 6100 6450
+Wire Wire Line
+	5850 6350 6100 6350
+$Comp
+L Connector_Generic:Conn_01x09 J2
+U 1 1 60F82694
+P 6300 6750
+F 0 "J2" H 6380 6792 50  0000 L CNN
+F 1 "Conn_01x09" H 6380 6701 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x09_P1.00mm_Vertical" H 6300 6750 50  0001 C CNN
+F 3 "~" H 6300 6750 50  0001 C CNN
+	1    6300 6750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
