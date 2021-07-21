@@ -205,7 +205,6 @@ F 3 "" H 6750 2000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2450 2500 3250 2500
-Connection ~ 3250 2500
 Wire Wire Line
 	6000 3150 6000 3000
 Wire Wire Line
@@ -281,10 +280,7 @@ Wire Wire Line
 Wire Wire Line
 	8250 2400 8250 2500
 Wire Wire Line
-	3250 2500 4250 2500
-Wire Wire Line
 	4250 2500 4250 2600
-Connection ~ 4250 2500
 Wire Wire Line
 	4250 2500 4350 2500
 Wire Wire Line
@@ -370,15 +366,9 @@ SPK_EN
 Text GLabel 1500 5000 0    50   Input ~ 0
 AN_EN
 Wire Wire Line
-	2650 4500 3500 4500
-Wire Wire Line
-	3500 5000 3000 5000
-Wire Wire Line
 	3000 5000 3000 4600
-Connection ~ 3500 4500
 Wire Wire Line
 	3000 4600 2650 4600
-Connection ~ 3500 5000
 Wire Wire Line
 	3500 4500 4100 4500
 Wire Wire Line
@@ -1146,4 +1136,53 @@ F 3 "~" H 6300 6750 50  0001 C CNN
 	1    6300 6750
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_US R6
+U 1 1 6100CECF
+P 3750 2500
+F 0 "R6" H 3818 2546 50  0000 L CNN
+F 1 "0" H 3818 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3790 2490 50  0001 C CNN
+F 3 "~" H 3750 2500 50  0001 C CNN
+	1    3750 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3250 2500 3600 2500
+Connection ~ 3250 2500
+Wire Wire Line
+	3900 2500 4250 2500
+Connection ~ 4250 2500
+$Comp
+L Device:R_US R5
+U 1 1 6102CCD2
+P 3250 5000
+F 0 "R5" H 3318 5046 50  0000 L CNN
+F 1 "0" H 3318 4955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3290 4990 50  0001 C CNN
+F 3 "~" H 3250 5000 50  0001 C CNN
+	1    3250 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 61033385
+P 3100 4500
+F 0 "R4" H 3168 4546 50  0000 L CNN
+F 1 "0" H 3168 4455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3140 4490 50  0001 C CNN
+F 3 "~" H 3100 4500 50  0001 C CNN
+	1    3100 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2650 4500 2950 4500
+Wire Wire Line
+	3250 4500 3500 4500
+Connection ~ 3500 4500
+Wire Wire Line
+	3400 5000 3500 5000
+Connection ~ 3500 5000
+Wire Wire Line
+	3100 5000 3000 5000
 $EndSCHEMATC

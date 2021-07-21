@@ -1,1 +1,2 @@
-Record=TopLevelDocument|FileName=bidirectional_audio_v4.0_AFE.SchDoc
+Record=TopLevelDocument|FileName=bidirectional_audio_v4.0_AFE.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=bidirectional_audio_v4.0_AFE.SchDoc|FileName=bidirectional_audio_v4.0_Digital.SchDoc|SheetNumber= 
