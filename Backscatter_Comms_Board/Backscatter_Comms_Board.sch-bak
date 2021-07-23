@@ -1136,10 +1136,10 @@ Wire Wire Line
 Wire Wire Line
 	5850 6350 6100 6350
 $Comp
-L Connector_Generic:Conn_01x09 J?
+L Connector_Generic:Conn_01x09 J2
 U 1 1 60F82694
 P 6300 6750
-F 0 "J?" H 6380 6792 50  0000 L CNN
+F 0 "J2" H 6380 6792 50  0000 L CNN
 F 1 "Conn_01x09" H 6380 6701 50  0000 L CNN
 F 2 "Connector_PinHeader_1.00mm:PinHeader_1x09_P1.00mm_Vertical" H 6300 6750 50  0001 C CNN
 F 3 "~" H 6300 6750 50  0001 C CNN
