@@ -560,22 +560,10 @@ Wire Wire Line
 	4500 5600 4500 6600
 Wire Wire Line
 	4050 5500 4050 5600
-$Comp
-L pspice:MNMOS M2
-U 1 1 60EC15C1
-P 4250 5700
-F 0 "M2" H 4537 5746 50  0000 L CNN
-F 1 "DNP" H 4537 5655 50  0000 L CNN
-F 2 "Local Components:BF1101WR" H 4225 5700 50  0001 C CNN
-F 3 "~" H 4225 5700 50  0001 C CNN
-	1    4250 5700
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
 	4050 5500 3500 5500
 Wire Wire Line
 	3500 5500 3500 5300
-Connection ~ 4050 5500
 Wire Wire Line
 	3500 5500 3500 5750
 Connection ~ 3500 5500
@@ -649,19 +637,17 @@ F 3 "" H 5000 6500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6100 6550 5850 6550
-Wire Wire Line
-	6100 6650 5850 6650
-Wire Wire Line
-	6100 6750 5850 6750
+	6100 6350 5850 6350
 Wire Wire Line
 	6100 6950 5850 6950
-Text GLabel 5850 6550 0    50   Input ~ 0
+Wire Wire Line
+	6100 7150 5850 7150
+Wire Wire Line
+	6100 6550 5850 6550
+Text GLabel 5850 6350 0    50   Input ~ 0
 Stage4
-Text GLabel 5850 6750 0    50   Input ~ 0
+Text GLabel 5850 7150 0    50   Input ~ 0
 RF_RX
-Text GLabel 5850 7050 0    50   Input ~ 0
-SPK_EN
 Text GLabel 7500 4000 2    50   Input ~ 0
 Stage4
 $Comp
@@ -690,7 +676,7 @@ Wire Wire Line
 Connection ~ 6750 2500
 Wire Wire Line
 	6750 2500 7000 2500
-Text GLabel 5850 7150 0    50   Input ~ 0
+Text GLabel 5850 6850 0    50   Input ~ 0
 AN_EN
 Text GLabel 5800 7550 0    50   Input ~ 0
 Ant
@@ -745,10 +731,6 @@ F 5 "IPC-7251" H 10000 5350 50  0001 L BNN "STANDARD"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 7050 5850 7050
-Wire Wire Line
-	5850 7150 6100 7150
-Wire Wire Line
 	6050 7550 5800 7550
 Wire Wire Line
 	9150 5050 9700 5050
@@ -756,10 +738,6 @@ Wire Wire Line
 	8350 5050 8000 5050
 Wire Wire Line
 	8350 5450 8000 5450
-Wire Wire Line
-	9700 5650 9500 5650
-Wire Wire Line
-	9500 5650 9500 6000
 Text GLabel 8000 5450 0    50   Input ~ 0
 Vstore
 Text GLabel 8000 5250 0    50   Input ~ 0
@@ -770,9 +748,6 @@ Wire Wire Line
 	8350 5250 8000 5250
 Wire Wire Line
 	9150 5450 9150 5650
-Wire Wire Line
-	9150 5650 9500 5650
-Connection ~ 9500 5650
 Wire Wire Line
 	10300 5650 10500 5650
 $Comp
@@ -804,7 +779,7 @@ F 3 "" H 6750 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6750 6000
-Text GLabel 5850 6950 0    50   Input ~ 0
+Text GLabel 5850 6550 0    50   Input ~ 0
 UPLINK_SR
 $Comp
 L power:GND #PWR013
@@ -817,7 +792,7 @@ F 3 "" H 9500 6000 50  0001 C CNN
 	1    9500 6000
 	1    0    0    -1  
 $EndComp
-Text GLabel 5850 6650 0    50   Input ~ 0
+Text GLabel 5850 6950 0    50   Input ~ 0
 Vrect
 $Comp
 L power:GND #PWR05
@@ -830,35 +805,8 @@ F 3 "" H 4250 3000 50  0001 C CNN
 	1    4250 3000
 	1    0    0    -1  
 $EndComp
-$Comp
-L pspice:MNMOS M1
-U 1 1 60E5009C
-P 3350 3100
-F 0 "M1" H 3637 3146 50  0000 L CNN
-F 1 "MNMOS" H 3637 3055 50  0000 L CNN
-F 2 "Local Components:BF1101WR" H 3325 3100 50  0001 C CNN
-F 3 "~" H 3325 3100 50  0001 C CNN
-	1    3350 3100
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3250 3300 3200 3300
-Text GLabel 3550 3100 2    50   Input ~ 0
+Text GLabel 3650 3100 2    50   Input ~ 0
 RF_TX
-$Comp
-L power:GND #PWR02
-U 1 1 6106FF9F
-P 3200 3300
-F 0 "#PWR02" H 3200 3050 50  0001 C CNN
-F 1 "GND" H 3205 3127 50  0000 C CNN
-F 2 "" H 3200 3300 50  0001 C CNN
-F 3 "" H 3200 3300 50  0001 C CNN
-	1    3200 3300
-	1    0    0    -1  
-$EndComp
-Connection ~ 3200 3300
-Wire Wire Line
-	3200 3300 3150 3300
 Wire Wire Line
 	3250 2500 3250 2900
 $Comp
@@ -1074,10 +1022,8 @@ F 3 "~" H 1700 4250 50  0001 C CNN
 	1    1700 4250
 	-1   0    0    1   
 $EndComp
-Text GLabel 5850 6850 0    50   Input ~ 0
+Text GLabel 5850 6750 0    50   Input ~ 0
 RF_TX
-Wire Wire Line
-	6100 6850 5850 6850
 Text GLabel 9550 1300 0    50   Input ~ 0
 RX_EN
 Text Notes 4100 7000 0    50   ~ 0
@@ -1094,7 +1040,7 @@ U 1 1 60EE6BC8
 P 6150 7450
 F 0 "AE1" V 6122 7754 50  0000 L CNN
 F 1 "Antenna_Chip" V 6213 7754 50  0000 L CNN
-F 2 "Connector_Coaxial:MMCX_Molex_73415-0961_Horizontal_1.0mm-PCB" H 6050 7625 50  0001 C CNN
+F 2 "Connector_Coaxial:MMCX_Molex_73415-0961_Horizontal_0.8mm-PCB" H 6050 7625 50  0001 C CNN
 F 3 "~" H 6050 7625 50  0001 C CNN
 	1    6150 7450
 	0    1    1    0   
@@ -1118,13 +1064,9 @@ Connection ~ 1700 4500
 Wire Wire Line
 	1700 4500 1500 4500
 Text GLabel 5850 6450 0    50   Input ~ 0
-RX_EN
-Text GLabel 5850 6350 0    50   Input ~ 0
 Vstore
 Wire Wire Line
 	5850 6450 6100 6450
-Wire Wire Line
-	5850 6350 6100 6350
 $Comp
 L Connector_Generic:Conn_01x09 J2
 U 1 1 60F82694
@@ -1187,4 +1129,79 @@ Wire Wire Line
 	3100 5000 3000 5000
 Text Notes 9650 5950 0    50   ~ 0
 Add downlink_SR\n
+Wire Wire Line
+	6100 6650 5850 6650
+Text GLabel 5850 6650 0    50   Input ~ 0
+SPK_EN
+Wire Wire Line
+	5850 7050 6100 7050
+Text GLabel 5850 7050 0    50   Input ~ 0
+RX_EN
+$Comp
+L ADG919:BF1101WR M1
+U 1 1 6104D965
+P 3350 3100
+F 0 "M1" H 3538 3146 50  0000 L CNN
+F 1 "BF1101WR" H 3538 3055 50  0000 L CNN
+F 2 "Local Components:BF1101WR" H 3325 3100 50  0001 C CNN
+F 3 "~" H 3325 3100 50  0001 C CNN
+	1    3350 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 6106FF9F
+P 3250 3300
+F 0 "#PWR02" H 3250 3050 50  0001 C CNN
+F 1 "GND" H 3255 3127 50  0000 C CNN
+F 2 "" H 3250 3300 50  0001 C CNN
+F 3 "" H 3250 3300 50  0001 C CNN
+	1    3250 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3100 3550 3100
+Wire Wire Line
+	3550 3100 3550 3050
+Wire Wire Line
+	3550 3100 3550 3150
+Connection ~ 3550 3100
+$Comp
+L ADG919:BF1101WR M2
+U 1 1 6107F5AB
+P 4250 5700
+F 0 "M2" V 4575 5700 50  0000 C CNN
+F 1 "BF1101WR" V 4484 5700 50  0000 C CNN
+F 2 "Local Components:BF1101WR" H 4225 5700 50  0001 C CNN
+F 3 "~" H 4225 5700 50  0001 C CNN
+	1    4250 5700
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4300 5900 4250 5900
+Connection ~ 4250 5900
+Wire Wire Line
+	4250 5900 4200 5900
+Wire Wire Line
+	6100 6750 5850 6750
+Wire Wire Line
+	5850 6850 6100 6850
+Wire Wire Line
+	9150 5650 9500 5650
+$Comp
+L Device:R_US DNP1
+U 1 1 6110FF1A
+P 9500 5850
+F 0 "DNP1" H 9568 5896 50  0000 L CNN
+F 1 "R_DLS" H 9568 5805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 9540 5840 50  0001 C CNN
+F 3 "~" H 9500 5850 50  0001 C CNN
+	1    9500 5850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9500 5700 9500 5650
+Connection ~ 9500 5650
+Wire Wire Line
+	9500 5650 9700 5650
 $EndSCHEMATC

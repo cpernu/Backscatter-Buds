@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BF1101WR
+D N-channel MOSFET symbol for simulation only
+K mosfet nmos simulation
+F ~
+$ENDCMP
+#
+#End Doc Library
