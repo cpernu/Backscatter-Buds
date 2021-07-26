@@ -373,8 +373,6 @@ Wire Wire Line
 	3500 4500 4100 4500
 Wire Wire Line
 	3500 5000 4100 5000
-Wire Wire Line
-	4250 5900 4250 6100
 $Comp
 L Device:C C8
 U 1 1 60ED75C8
@@ -604,8 +602,6 @@ F 3 "" H 3500 4000 50  0001 C CNN
 $EndComp
 Text GLabel 10750 1750 2    50   Input ~ 0
 RF_RX
-Text GLabel 4250 6100 3    50   Input ~ 0
-UPLINK_SR
 Connection ~ 6750 3500
 $Comp
 L Connector_Generic:Conn_01x03 J1
@@ -637,16 +633,14 @@ F 3 "" H 5000 6500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6100 6350 5850 6350
+	10500 5750 10250 5750
 Wire Wire Line
-	6100 6950 5850 6950
+	10500 6350 10250 6350
 Wire Wire Line
-	6100 7150 5850 7150
-Wire Wire Line
-	6100 6550 5850 6550
-Text GLabel 5850 6350 0    50   Input ~ 0
+	10500 6550 10250 6550
+Text GLabel 10250 5750 0    50   Input ~ 0
 Stage4
-Text GLabel 5850 7150 0    50   Input ~ 0
+Text GLabel 10250 6550 0    50   Input ~ 0
 RF_RX
 Text GLabel 7500 4000 2    50   Input ~ 0
 Stage4
@@ -676,7 +670,7 @@ Wire Wire Line
 Connection ~ 6750 2500
 Wire Wire Line
 	6750 2500 7000 2500
-Text GLabel 5850 6850 0    50   Input ~ 0
+Text GLabel 10250 6250 0    50   Input ~ 0
 AN_EN
 Text GLabel 5800 7550 0    50   Input ~ 0
 Ant
@@ -751,23 +745,6 @@ Wire Wire Line
 Wire Wire Line
 	10300 5650 10500 5650
 $Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 6103D8DC
-P 10700 5300
-F 0 "J3" H 10780 5292 50  0000 L CNN
-F 1 "Conn_01x02" H 10780 5201 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10700 5300 50  0001 C CNN
-F 3 "~" H 10700 5300 50  0001 C CNN
-	1    10700 5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10300 5050 10500 5050
-Wire Wire Line
-	10500 5050 10500 5300
-Wire Wire Line
-	10500 5400 10500 5650
-$Comp
 L power:GND #PWR09
 U 1 1 610492B0
 P 6750 6000
@@ -779,8 +756,6 @@ F 3 "" H 6750 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6750 6000
-Text GLabel 5850 6550 0    50   Input ~ 0
-UPLINK_SR
 $Comp
 L power:GND #PWR013
 U 1 1 6105DBB5
@@ -792,7 +767,7 @@ F 3 "" H 9500 6000 50  0001 C CNN
 	1    9500 6000
 	1    0    0    -1  
 $EndComp
-Text GLabel 5850 6950 0    50   Input ~ 0
+Text GLabel 10250 6350 0    50   Input ~ 0
 Vrect
 $Comp
 L power:GND #PWR05
@@ -1022,7 +997,7 @@ F 3 "~" H 1700 4250 50  0001 C CNN
 	1    1700 4250
 	-1   0    0    1   
 $EndComp
-Text GLabel 5850 6750 0    50   Input ~ 0
+Text GLabel 10250 6150 0    50   Input ~ 0
 RF_TX
 Text GLabel 9550 1300 0    50   Input ~ 0
 RX_EN
@@ -1063,21 +1038,10 @@ Wire Wire Line
 Connection ~ 1700 4500
 Wire Wire Line
 	1700 4500 1500 4500
-Text GLabel 5850 6450 0    50   Input ~ 0
+Text GLabel 10250 5850 0    50   Input ~ 0
 Vstore
 Wire Wire Line
-	5850 6450 6100 6450
-$Comp
-L Connector_Generic:Conn_01x09 J2
-U 1 1 60F82694
-P 6300 6750
-F 0 "J2" H 6380 6792 50  0000 L CNN
-F 1 "Conn_01x09" H 6380 6701 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 6300 6750 50  0001 C CNN
-F 3 "~" H 6300 6750 50  0001 C CNN
-	1    6300 6750
-	1    0    0    -1  
-$EndComp
+	10250 5850 10500 5850
 $Comp
 L Device:R_US R6
 U 1 1 6100CECF
@@ -1127,27 +1091,14 @@ Wire Wire Line
 Connection ~ 3500 5000
 Wire Wire Line
 	3100 5000 3000 5000
-Text Notes 9650 5950 0    50   ~ 0
-Add downlink_SR\n
 Wire Wire Line
-	6100 6650 5850 6650
-Text GLabel 5850 6650 0    50   Input ~ 0
+	10500 6050 10250 6050
+Text GLabel 10250 6050 0    50   Input ~ 0
 SPK_EN
 Wire Wire Line
-	5850 7050 6100 7050
-Text GLabel 5850 7050 0    50   Input ~ 0
+	10250 6450 10500 6450
+Text GLabel 10250 6450 0    50   Input ~ 0
 RX_EN
-$Comp
-L ADG919:BF1101WR M1
-U 1 1 6104D965
-P 3350 3100
-F 0 "M1" H 3538 3146 50  0000 L CNN
-F 1 "BF1101WR" H 3538 3055 50  0000 L CNN
-F 2 "Local Components:BF1101WR" H 3325 3100 50  0001 C CNN
-F 3 "~" H 3325 3100 50  0001 C CNN
-	1    3350 3100
-	-1   0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 6106FF9F
@@ -1166,26 +1117,10 @@ Wire Wire Line
 Wire Wire Line
 	3550 3100 3550 3150
 Connection ~ 3550 3100
-$Comp
-L ADG919:BF1101WR M2
-U 1 1 6107F5AB
-P 4250 5700
-F 0 "M2" V 4575 5700 50  0000 C CNN
-F 1 "BF1101WR" V 4484 5700 50  0000 C CNN
-F 2 "Local Components:BF1101WR" H 4225 5700 50  0001 C CNN
-F 3 "~" H 4225 5700 50  0001 C CNN
-	1    4250 5700
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
-	4300 5900 4250 5900
-Connection ~ 4250 5900
+	10500 6150 10250 6150
 Wire Wire Line
-	4250 5900 4200 5900
-Wire Wire Line
-	6100 6750 5850 6750
-Wire Wire Line
-	5850 6850 6100 6850
+	10250 6250 10500 6250
 Wire Wire Line
 	9150 5650 9500 5650
 $Comp
@@ -1204,4 +1139,83 @@ Wire Wire Line
 Connection ~ 9500 5650
 Wire Wire Line
 	9500 5650 9700 5650
+$Comp
+L power:GND #PWR0103
+U 1 1 61191A72
+P 4250 6200
+F 0 "#PWR0103" H 4250 5950 50  0001 C CNN
+F 1 "GND" H 4255 6027 50  0000 C CNN
+F 2 "" H 4250 6200 50  0001 C CNN
+F 3 "" H 4250 6200 50  0001 C CNN
+	1    4250 6200
+	1    0    0    -1  
+$EndComp
+Text Notes 3900 6200 0    50   ~ 0
+Add downlink_SR\n
+$Comp
+L Device:R_US DNP2
+U 1 1 61191A79
+P 4250 6050
+F 0 "DNP2" H 4318 6096 50  0000 L CNN
+F 1 "R_DLS" H 4318 6005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 4290 6040 50  0001 C CNN
+F 3 "~" H 4250 6050 50  0001 C CNN
+	1    4250 6050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4200 5900 4250 5900
+Connection ~ 4250 5900
+Wire Wire Line
+	4250 5900 4300 5900
+$Comp
+L ADG919:3SK293 M1
+U 1 1 611C441C
+P 3350 3100
+F 0 "M1" H 3538 3146 50  0000 L CNN
+F 1 "3SK293" H 3538 3055 50  0000 L CNN
+F 2 "Local Components:3SK293" H 3325 3100 50  0001 C CNN
+F 3 "~" H 3325 3100 50  0001 C CNN
+	1    3350 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L ADG919:3SK293 DNP3
+U 1 1 611D3BD0
+P 4250 5700
+F 0 "DNP3" V 4575 5700 50  0000 C CNN
+F 1 "3SK293" V 4484 5700 50  0000 C CNN
+F 2 "Local Components:3SK293" H 4225 5700 50  0001 C CNN
+F 3 "~" H 4225 5700 50  0001 C CNN
+	1    4250 5700
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 611E9FE5
+P 10200 5950
+F 0 "#PWR0104" H 10200 5700 50  0001 C CNN
+F 1 "GND" H 10205 5777 50  0000 C CNN
+F 2 "" H 10200 5950 50  0001 C CNN
+F 3 "" H 10200 5950 50  0001 C CNN
+	1    10200 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10500 5950 10200 5950
+$Comp
+L Connector_Generic:Conn_01x11 J2
+U 1 1 61200553
+P 10700 6050
+F 0 "J2" H 10780 6092 50  0000 L CNN
+F 1 "Conn_01x11" H 10780 6001 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical" H 10700 6050 50  0001 C CNN
+F 3 "~" H 10700 6050 50  0001 C CNN
+	1    10700 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 5050 10500 5050
+Wire Wire Line
+	10500 5050 10500 5550
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-19232316597242035
+19233944178147100
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -56210,6 +56210,13 @@ Yellow 5381 Series LED
 2
 2
 Local Components
+3SK293
+
+
+0
+4
+1
+Local Components
 Analog_Devices-ADG841YKSZ-REEL7-Level_A
 
 
@@ -56257,7 +56264,7 @@ BF1101WR
 
 0
 4
-4
+1
 Local Components
 Multi-purpose_mic
 
