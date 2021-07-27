@@ -120,7 +120,7 @@ L Device:R_US R1
 U 1 1 60E67B98
 P 7500 1750
 F 0 "R1" H 7568 1796 50  0000 L CNN
-F 1 "R_US" H 7568 1705 50  0000 L CNN
+F 1 "560k" H 7568 1705 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 7540 1740 50  0001 C CNN
 F 3 "~" H 7500 1750 50  0001 C CNN
 	1    7500 1750
@@ -633,14 +633,14 @@ F 3 "" H 5000 6500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	10500 5750 10250 5750
+	10250 3900 10000 3900
 Wire Wire Line
-	10500 6350 10250 6350
+	10250 4500 10000 4500
 Wire Wire Line
-	10500 6550 10250 6550
-Text GLabel 10250 5750 0    50   Input ~ 0
+	10250 4700 10000 4700
+Text GLabel 10000 3900 0    50   Input ~ 0
 Stage4
-Text GLabel 10250 6550 0    50   Input ~ 0
+Text GLabel 10000 4700 0    50   Input ~ 0
 RF_RX
 Text GLabel 7500 4000 2    50   Input ~ 0
 Stage4
@@ -670,80 +670,80 @@ Wire Wire Line
 Connection ~ 6750 2500
 Wire Wire Line
 	6750 2500 7000 2500
-Text GLabel 10250 6250 0    50   Input ~ 0
+Text GLabel 10000 4400 0    50   Input ~ 0
 AN_EN
-Text GLabel 5800 7550 0    50   Input ~ 0
+Text GLabel 5650 6900 0    50   Input ~ 0
 Ant
 $Comp
 L ADG841:ADG841YKSZ-REEL7 U2
 U 1 1 60FC0FC8
-P 8250 5050
-F 0 "U2" H 8750 5315 50  0000 C CNN
-F 1 "ADG841YKSZ-REEL7" H 8750 5224 50  0000 C CNN
-F 2 "Local Components:Analog_Devices-ADG841YKSZ-REEL7-Level_C" H 8250 5450 50  0001 L CNN
-F 3 "http://www.analog.com/static/imported-files/data_sheets/ADG841_842.pdf" H 8250 5550 50  0001 L CNN
-F 4 "MO-203-AB" H 8250 5650 50  0001 L CNN "Code  JEDEC"
-F 5 "Manufacturer URL" H 8250 5750 50  0001 L CNN "Component Link 1 Description"
-F 6 "http://www.analog.com/en/index.html" H 8250 5850 50  0001 L CNN "Component Link 1 URL"
-F 7 "Package Specification" H 8250 5950 50  0001 L CNN "Component Link 3 Description"
-F 8 "http://www.analog.com/static/imported-files/packages/PKG_PDF/SC70(KS)/KS_6.pdf" H 8250 6050 50  0001 L CNN "Component Link 3 URL"
-F 9 "SPST" H 8250 6150 50  0001 L CNN "Configuration"
-F 10 "Rev. 0" H 8250 6250 50  0001 L CNN "Datasheet Version"
-F 11 "200pA, 200pA, 200pA" H 8250 6350 50  0001 L CNN "Id Is ON"
-F 12 "200pA, 200pA, 200pA" H 8250 6450 50  0001 L CNN "Is OFF"
-F 13 "3.6V" H 8250 6550 50  0001 L CNN "Max Pos Supply"
-F 14 "1.65V" H 8250 6650 50  0001 L CNN "Min Pos Supply"
-F 15 "Surface Mount" H 8250 6750 50  0001 L CNN "Mounting Technology"
-F 16 "6-Pin Thin Shrink Small Outline Transistor Package, Body 2 x 1.25 mm, Pitch 0.65 mm" H 8250 6850 50  0001 L CNN "Package Description"
-F 17 "072809-A, 07/2009" H 8250 6950 50  0001 L CNN "Package Version"
-F 18 "Reel" H 8250 7050 50  0001 L CNN "Packing"
-F 19 "14.4uW" H 8250 7150 50  0001 L CNN "Power Dissipation"
-F 20 "0.28" H 8250 7250 50  0001 L CNN "Ron ohms"
-F 21 "1" H 8250 7350 50  0001 L CNN "Sw Functions"
-F 22 "IC" H 8250 7450 50  0001 L CNN "category"
-F 23 "1263833" H 8250 7550 50  0001 L CNN "ciiva ids"
-F 24 "2f2f1990e2cb1175" H 8250 7650 50  0001 L CNN "library id"
-F 25 "Analog Devices" H 8250 7750 50  0001 L CNN "manufacturer"
-F 26 "KS-6" H 8250 7850 50  0001 L CNN "package"
-F 27 "1391088432" H 8250 7950 50  0001 L CNN "release date"
-F 28 "28AB861B-4E80-4954-BF22-D1CBABD21128" H 8250 8050 50  0001 L CNN "vault revision"
-F 29 "yes" H 8250 8150 50  0001 L CNN "imported"
-	1    8250 5050
+P 8000 3200
+F 0 "U2" H 8500 3465 50  0000 C CNN
+F 1 "ADG841YKSZ-REEL7" H 8500 3374 50  0000 C CNN
+F 2 "Local Components:Analog_Devices-ADG841YKSZ-REEL7-Level_C" H 8000 3600 50  0001 L CNN
+F 3 "http://www.analog.com/static/imported-files/data_sheets/ADG841_842.pdf" H 8000 3700 50  0001 L CNN
+F 4 "MO-203-AB" H 8000 3800 50  0001 L CNN "Code  JEDEC"
+F 5 "Manufacturer URL" H 8000 3900 50  0001 L CNN "Component Link 1 Description"
+F 6 "http://www.analog.com/en/index.html" H 8000 4000 50  0001 L CNN "Component Link 1 URL"
+F 7 "Package Specification" H 8000 4100 50  0001 L CNN "Component Link 3 Description"
+F 8 "http://www.analog.com/static/imported-files/packages/PKG_PDF/SC70(KS)/KS_6.pdf" H 8000 4200 50  0001 L CNN "Component Link 3 URL"
+F 9 "SPST" H 8000 4300 50  0001 L CNN "Configuration"
+F 10 "Rev. 0" H 8000 4400 50  0001 L CNN "Datasheet Version"
+F 11 "200pA, 200pA, 200pA" H 8000 4500 50  0001 L CNN "Id Is ON"
+F 12 "200pA, 200pA, 200pA" H 8000 4600 50  0001 L CNN "Is OFF"
+F 13 "3.6V" H 8000 4700 50  0001 L CNN "Max Pos Supply"
+F 14 "1.65V" H 8000 4800 50  0001 L CNN "Min Pos Supply"
+F 15 "Surface Mount" H 8000 4900 50  0001 L CNN "Mounting Technology"
+F 16 "6-Pin Thin Shrink Small Outline Transistor Package, Body 2 x 1.25 mm, Pitch 0.65 mm" H 8000 5000 50  0001 L CNN "Package Description"
+F 17 "072809-A, 07/2009" H 8000 5100 50  0001 L CNN "Package Version"
+F 18 "Reel" H 8000 5200 50  0001 L CNN "Packing"
+F 19 "14.4uW" H 8000 5300 50  0001 L CNN "Power Dissipation"
+F 20 "0.28" H 8000 5400 50  0001 L CNN "Ron ohms"
+F 21 "1" H 8000 5500 50  0001 L CNN "Sw Functions"
+F 22 "IC" H 8000 5600 50  0001 L CNN "category"
+F 23 "1263833" H 8000 5700 50  0001 L CNN "ciiva ids"
+F 24 "2f2f1990e2cb1175" H 8000 5800 50  0001 L CNN "library id"
+F 25 "Analog Devices" H 8000 5900 50  0001 L CNN "manufacturer"
+F 26 "KS-6" H 8000 6000 50  0001 L CNN "package"
+F 27 "1391088432" H 8000 6100 50  0001 L CNN "release date"
+F 28 "28AB861B-4E80-4954-BF22-D1CBABD21128" H 8000 6200 50  0001 L CNN "vault revision"
+F 29 "yes" H 8000 6300 50  0001 L CNN "imported"
+	1    8000 3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L SP-48:SP-48 T1
 U 1 1 60FC8284
-P 10000 5350
-F 0 "T1" H 10000 5840 50  0000 C CNN
-F 1 "SP-48" H 10000 5749 50  0000 C CNN
-F 2 "Local Components:XFMR_SP-48" H 10000 5350 50  0001 L BNN
-F 3 "" H 10000 5350 50  0001 L BNN
-F 4 "Triad" H 10000 5350 50  0001 L BNN "MANUFACTURER"
-F 5 "IPC-7251" H 10000 5350 50  0001 L BNN "STANDARD"
-	1    10000 5350
+P 9750 3500
+F 0 "T1" H 9750 3990 50  0000 C CNN
+F 1 "SP-48" H 9750 3899 50  0000 C CNN
+F 2 "Local Components:XFMR_SP-48" H 9750 3500 50  0001 L BNN
+F 3 "" H 9750 3500 50  0001 L BNN
+F 4 "Triad" H 9750 3500 50  0001 L BNN "MANUFACTURER"
+F 5 "IPC-7251" H 9750 3500 50  0001 L BNN "STANDARD"
+	1    9750 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6050 7550 5800 7550
+	5900 6900 5650 6900
 Wire Wire Line
-	9150 5050 9700 5050
+	8900 3200 9450 3200
 Wire Wire Line
-	8350 5050 8000 5050
+	8100 3200 7750 3200
 Wire Wire Line
-	8350 5450 8000 5450
-Text GLabel 8000 5450 0    50   Input ~ 0
+	8100 3600 7750 3600
+Text GLabel 7750 3600 0    50   Input ~ 0
 Vstore
-Text GLabel 8000 5250 0    50   Input ~ 0
+Text GLabel 7750 3400 0    50   Input ~ 0
 SPK_EN
-Text GLabel 8000 5050 0    50   Input ~ 0
+Text GLabel 7750 3200 0    50   Input ~ 0
 Stage4
 Wire Wire Line
-	8350 5250 8000 5250
+	8100 3400 7750 3400
 Wire Wire Line
-	9150 5450 9150 5650
+	8900 3600 8900 3800
 Wire Wire Line
-	10300 5650 10500 5650
+	10050 3800 10250 3800
 $Comp
 L power:GND #PWR09
 U 1 1 610492B0
@@ -759,15 +759,15 @@ Connection ~ 6750 6000
 $Comp
 L power:GND #PWR013
 U 1 1 6105DBB5
-P 9500 6000
-F 0 "#PWR013" H 9500 5750 50  0001 C CNN
-F 1 "GND" H 9505 5827 50  0000 C CNN
-F 2 "" H 9500 6000 50  0001 C CNN
-F 3 "" H 9500 6000 50  0001 C CNN
-	1    9500 6000
+P 9250 4150
+F 0 "#PWR013" H 9250 3900 50  0001 C CNN
+F 1 "GND" H 9255 3977 50  0000 C CNN
+F 2 "" H 9250 4150 50  0001 C CNN
+F 3 "" H 9250 4150 50  0001 C CNN
+	1    9250 4150
 	1    0    0    -1  
 $EndComp
-Text GLabel 10250 6350 0    50   Input ~ 0
+Text GLabel 10000 4500 0    50   Input ~ 0
 Vrect
 $Comp
 L power:GND #PWR05
@@ -997,51 +997,25 @@ F 3 "~" H 1700 4250 50  0001 C CNN
 	1    1700 4250
 	-1   0    0    1   
 $EndComp
-Text GLabel 10250 6150 0    50   Input ~ 0
+Text GLabel 10000 4300 0    50   Input ~ 0
 RF_TX
 Text GLabel 9550 1300 0    50   Input ~ 0
 RX_EN
-Text Notes 4100 7000 0    50   ~ 0
-CHANGE FROM HEADER TO MIC
 Text Notes 3700 4200 0    50   ~ 0
 *Filter values may change\n
 Text Notes 3300 4950 0    50   ~ 0
 *Filter values may change\n
 Text Notes 3750 2250 0    50   ~ 0
 *Filter values may change\n
-$Comp
-L Device:Antenna_Chip AE1
-U 1 1 60EE6BC8
-P 6150 7450
-F 0 "AE1" V 6122 7754 50  0000 L CNN
-F 1 "Antenna_Chip" V 6213 7754 50  0000 L CNN
-F 2 "Connector_Coaxial:MMCX_Molex_73415-0961_Horizontal_0.8mm-PCB" H 6050 7625 50  0001 C CNN
-F 3 "~" H 6050 7625 50  0001 C CNN
-	1    6150 7450
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 60EEE4F1
-P 5800 7350
-F 0 "#PWR0102" H 5800 7100 50  0001 C CNN
-F 1 "GND" H 5805 7177 50  0000 C CNN
-F 2 "" H 5800 7350 50  0001 C CNN
-F 3 "" H 5800 7350 50  0001 C CNN
-	1    5800 7350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6050 7350 5800 7350
 Wire Wire Line
 	1700 4400 1700 4500
 Connection ~ 1700 4500
 Wire Wire Line
 	1700 4500 1500 4500
-Text GLabel 10250 5850 0    50   Input ~ 0
+Text GLabel 10000 4000 0    50   Input ~ 0
 Vstore
 Wire Wire Line
-	10250 5850 10500 5850
+	10000 4000 10250 4000
 $Comp
 L Device:R_US R6
 U 1 1 6100CECF
@@ -1092,12 +1066,12 @@ Connection ~ 3500 5000
 Wire Wire Line
 	3100 5000 3000 5000
 Wire Wire Line
-	10500 6050 10250 6050
-Text GLabel 10250 6050 0    50   Input ~ 0
+	10250 4200 10000 4200
+Text GLabel 10000 4200 0    50   Input ~ 0
 SPK_EN
 Wire Wire Line
-	10250 6450 10500 6450
-Text GLabel 10250 6450 0    50   Input ~ 0
+	10000 4600 10250 4600
+Text GLabel 10000 4600 0    50   Input ~ 0
 RX_EN
 $Comp
 L power:GND #PWR02
@@ -1118,27 +1092,27 @@ Wire Wire Line
 	3550 3100 3550 3150
 Connection ~ 3550 3100
 Wire Wire Line
-	10500 6150 10250 6150
+	10250 4300 10000 4300
 Wire Wire Line
-	10250 6250 10500 6250
+	10000 4400 10250 4400
 Wire Wire Line
-	9150 5650 9500 5650
+	8900 3800 9250 3800
 $Comp
 L Device:R_US DNP1
 U 1 1 6110FF1A
-P 9500 5850
-F 0 "DNP1" H 9568 5896 50  0000 L CNN
-F 1 "R_DLS" H 9568 5805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 9540 5840 50  0001 C CNN
-F 3 "~" H 9500 5850 50  0001 C CNN
-	1    9500 5850
+P 9250 4000
+F 0 "DNP1" H 9318 4046 50  0000 L CNN
+F 1 "R_DLS" H 9318 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 9290 3990 50  0001 C CNN
+F 3 "~" H 9250 4000 50  0001 C CNN
+	1    9250 4000
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9500 5700 9500 5650
-Connection ~ 9500 5650
+	9250 3850 9250 3800
+Connection ~ 9250 3800
 Wire Wire Line
-	9500 5650 9700 5650
+	9250 3800 9450 3800
 $Comp
 L power:GND #PWR0103
 U 1 1 61191A72
@@ -1193,29 +1167,53 @@ $EndComp
 $Comp
 L power:GND #PWR0104
 U 1 1 611E9FE5
-P 10200 5950
-F 0 "#PWR0104" H 10200 5700 50  0001 C CNN
-F 1 "GND" H 10205 5777 50  0000 C CNN
-F 2 "" H 10200 5950 50  0001 C CNN
-F 3 "" H 10200 5950 50  0001 C CNN
-	1    10200 5950
+P 9950 4100
+F 0 "#PWR0104" H 9950 3850 50  0001 C CNN
+F 1 "GND" H 9955 3927 50  0000 C CNN
+F 2 "" H 9950 4100 50  0001 C CNN
+F 3 "" H 9950 4100 50  0001 C CNN
+	1    9950 4100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10500 5950 10200 5950
+	10250 4100 9950 4100
 $Comp
 L Connector_Generic:Conn_01x11 J2
 U 1 1 61200553
-P 10700 6050
-F 0 "J2" H 10780 6092 50  0000 L CNN
-F 1 "Conn_01x11" H 10780 6001 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical" H 10700 6050 50  0001 C CNN
-F 3 "~" H 10700 6050 50  0001 C CNN
-	1    10700 6050
+P 10450 4200
+F 0 "J2" H 10530 4242 50  0000 L CNN
+F 1 "Conn_01x11" H 10530 4151 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical" H 10450 4200 50  0001 C CNN
+F 3 "~" H 10450 4200 50  0001 C CNN
+	1    10450 4200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10300 5050 10500 5050
+	10050 3200 10250 3200
 Wire Wire Line
-	10500 5050 10500 5550
+	10250 3200 10250 3700
+Wire Wire Line
+	5900 7200 5650 7200
+$Comp
+L power:GND #PWR0102
+U 1 1 60EEE4F1
+P 5650 7200
+F 0 "#PWR0102" H 5650 6950 50  0001 C CNN
+F 1 "GND" H 5655 7027 50  0000 C CNN
+F 2 "" H 5650 7200 50  0001 C CNN
+F 3 "" H 5650 7200 50  0001 C CNN
+	1    5650 7200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_Coaxial_Power J3
+U 1 1 612B4D28
+P 5900 7000
+F 0 "J3" H 5988 6996 50  0000 L CNN
+F 1 "Conn_Coaxial_Power" H 5988 6905 50  0000 L CNN
+F 2 "Connector_Coaxial:MMCX_Molex_73415-0961_Horizontal_0.8mm-PCB" H 5900 6950 50  0001 C CNN
+F 3 "~" H 5900 6950 50  0001 C CNN
+	1    5900 7000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
