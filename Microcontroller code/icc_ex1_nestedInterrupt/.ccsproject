@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?ccsproject version="1.0"?>
+<projectOptions>
+	<ccsVersion value="11.0.0"/>
+	<deviceVariant value="MSP430FR2355"/>
+	<deviceFamily value="MSP430"/>
+	<deviceEndianness value="little"/>
+	<codegenToolVersion value="20.2.5.LTS"/>
+	<isElfFormat value="true"/>
+	<linkerCommandFile value="lnk_msp430fr2355.cmd"/>
+	<rts value="libc.a"/>
+	<createSlaveProjects value=""/>
+	<templateProperties value="id=icc_ex1_nestedInterrupt.projectspec.icc_ex1_nestedInterrupt"/>
+	<origin value="C:\ti\msp430ware_3_80_13_03\driverlib\examples\MSP430FR2xx_4xx\icc\CCS\icc_ex1_nestedInterrupt.projectspec"/>
+	<filesToOpen value=""/>
+</projectOptions>
