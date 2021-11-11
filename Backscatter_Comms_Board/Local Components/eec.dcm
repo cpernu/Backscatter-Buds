@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MSP430FR2355TPTR
+D MSP430FR2355TPTR
+F http://www.ti.com/lit/ds/symlink/msp430fr2355.pdf
+$ENDCMP
+#
+#End Doc Library

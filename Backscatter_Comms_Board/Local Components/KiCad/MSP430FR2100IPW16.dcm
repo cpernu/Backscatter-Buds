@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MSP430FR2100IPW16
+D 16 MHz Ultra-Low-Power Microcontroller With 1 KB FRAM, 0.5 KB SRAM, 12 IO, 8 ch 10-bit ADC
+K
+F http://www.ti.com/lit/gpn/MSP430FR2100
+$ENDCMP
+#
+#End Doc Library
